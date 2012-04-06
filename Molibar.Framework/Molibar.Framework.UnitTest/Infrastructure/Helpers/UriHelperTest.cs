@@ -4,7 +4,7 @@ using Molibar.Infrastructure.Logging;
 using Molibar.Infrastructure.Logging.ForTesting;
 using NUnit.Framework;
 
-namespace Molibar.Framework.UnitTest.Helpers
+namespace Molibar.Framework.UnitTest.Infrastructure.Helpers
 {
     [TestFixture]
     public class UriHelperTest

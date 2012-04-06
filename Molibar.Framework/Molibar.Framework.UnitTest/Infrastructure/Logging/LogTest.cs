@@ -4,7 +4,7 @@ using NUnit.Framework;
 using Rhino.Mocks;
 using log4net;
 
-namespace Molibar.Framework.UnitTest.Logging
+namespace Molibar.Framework.UnitTest.Infrastructure.Logging
 {
     [TestFixture]
     class LogTest

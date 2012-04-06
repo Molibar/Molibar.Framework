@@ -5,7 +5,7 @@ using NUnit.Framework;
 namespace Molibar.Framework.UnitTest.Common
 {
     [TestFixture]
-    public class ConverterTest
+    public class DataConverterTest
     {
 
         [Test]

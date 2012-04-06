@@ -2,7 +2,7 @@
 using Molibar.Infrastructure.Logging.ForTesting;
 using NUnit.Framework;
 
-namespace Molibar.Framework.UnitTest.Logging.ForTesting
+namespace Molibar.Framework.UnitTest.Infrastructure.Logging.ForTesting
 {
     [TestFixture]
     class MemoryLoggerForTestTest

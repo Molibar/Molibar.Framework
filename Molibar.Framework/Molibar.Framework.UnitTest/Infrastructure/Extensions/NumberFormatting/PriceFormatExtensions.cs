@@ -1,7 +1,7 @@
 ﻿using Molibar.Infrastructure.Extensions.NumberFormatting;
 using NUnit.Framework;
 
-namespace Molibar.Framework.UnitTest.Extensions.NumberFormatting
+namespace Molibar.Framework.UnitTest.Infrastructure.Extensions.NumberFormatting
 {
     [TestFixture]
     public class PriceFormatExtensionsTests

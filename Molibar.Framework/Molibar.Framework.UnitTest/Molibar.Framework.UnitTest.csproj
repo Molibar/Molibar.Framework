@@ -50,20 +50,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\FilenameIteratorTest.cs" />
-    <Compile Include="Common\ConverterTest.cs" />
+    <Compile Include="Common\DataConverterTest.cs" />
     <Compile Include="Common\StringToolsTest.cs" />
     <Compile Include="Common\StringTools_Left_Test.cs" />
     <Compile Include="Common\StringTools_PadValue_Test.cs" />
-    <Compile Include="Configuration\ConfigurationSettingsTest.cs" />
-    <Compile Include="Configuration\ConfigurationSettingsProviderTest.cs" />
-    <Compile Include="DataAccess\DbAccessorTest.cs" />
-    <Compile Include="Extensions\NumberFormatting\NumberFormatExtensionsTests.cs" />
-    <Compile Include="Extensions\NumberFormatting\PriceFormatExtensions.cs" />
+    <Compile Include="Infrastructure\Configuration\ConfigurationSettingsTest.cs" />
+    <Compile Include="Infrastructure\Configuration\ConfigurationSettingsProviderTest.cs" />
+    <Compile Include="Infrastructure\DataAccess\DbAccessorTest.cs" />
+    <Compile Include="Infrastructure\Extensions\NumberFormatting\NumberFormatExtensionsTests.cs" />
+    <Compile Include="Infrastructure\Extensions\NumberFormatting\PriceFormatExtensions.cs" />
     <Compile Include="Common\StringTools_StripNonNumeric_Test.cs" />
-    <Compile Include="Helpers\UriHelperTest.cs" />
-    <Compile Include="Logging\ForTesting\MemoryLoggerForTestTest.cs" />
-    <Compile Include="Logging\LogTest.cs" />
-    <Compile Include="PerformanceCounters\TimeMeasurerTest.cs" />
+    <Compile Include="Infrastructure\Helpers\UriHelperTest.cs" />
+    <Compile Include="Infrastructure\Logging\ForTesting\MemoryLoggerForTestTest.cs" />
+    <Compile Include="Infrastructure\Logging\LogTest.cs" />
+    <Compile Include="Infrastructure\PerformanceCounters\TimeMeasurerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

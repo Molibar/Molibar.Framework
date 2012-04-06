@@ -1,7 +1,7 @@
 ﻿using Molibar.Infrastructure.DataAccess;
 using NUnit.Framework;
 
-namespace Molibar.Framework.UnitTest.DataAccess
+namespace Molibar.Framework.UnitTest.Infrastructure.DataAccess
 {
     [TestFixture]
     public class DbAccessorTest

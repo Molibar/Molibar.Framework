@@ -7,7 +7,7 @@ using Molibar.Infrastructure.Logging;
 using NUnit.Framework;
 using Rhino.Mocks;
 
-namespace Molibar.Framework.UnitTest.Configuration
+namespace Molibar.Framework.UnitTest.Infrastructure.Configuration
 {
     [TestFixture]
     class ConfigurationSettingsProviderTest

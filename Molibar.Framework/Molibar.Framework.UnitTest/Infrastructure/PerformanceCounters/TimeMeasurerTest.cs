@@ -1,7 +1,7 @@
 using Molibar.Infrastructure.PerformanceCounters;
 using NUnit.Framework;
 
-namespace Molibar.Framework.UnitTest.PerformanceCounters
+namespace Molibar.Framework.UnitTest.Infrastructure.PerformanceCounters
 {
     [TestFixture]
     public class TimeMeasurerTest
