@@ -2,7 +2,7 @@
 using System.Reflection;
 using System.Text;
 
-namespace Molibar.Caching.PostSharp
+namespace Molibar.Common.Presentation
 {
     public class Formatter
     {

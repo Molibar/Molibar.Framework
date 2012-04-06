@@ -52,6 +52,8 @@
   <ItemGroup>
     <Compile Include="DataConverter.cs" />
     <Compile Include="FilenameIterator.cs" />
+    <Compile Include="Presentation\Formatter.cs" />
+    <Compile Include="Presentation\MethodFormatStrings.cs" />
     <Compile Include="StringTools.cs" />
     <Compile Include="Web\CookieUtils.cs" />
     <Compile Include="Web\DataAnnotations\MustBeTrueAttribute.cs" />

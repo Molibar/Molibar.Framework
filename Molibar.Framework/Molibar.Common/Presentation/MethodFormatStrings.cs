@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Reflection;
 
-namespace Molibar.Caching.PostSharp
+namespace Molibar.Common.Presentation
 {
     [Serializable]
     public class MethodFormatStrings
