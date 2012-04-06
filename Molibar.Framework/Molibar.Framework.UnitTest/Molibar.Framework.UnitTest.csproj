@@ -54,6 +54,7 @@
     <Compile Include="Common\StringToolsTest.cs" />
     <Compile Include="Common\StringTools_Left_Test.cs" />
     <Compile Include="Common\StringTools_PadValue_Test.cs" />
+    <Compile Include="Infrastructure\Configuration\ConfigurationSettingsProviderTest_SetProperty_Test.cs" />
     <Compile Include="Infrastructure\Configuration\ConfigurationSettingsTest.cs" />
     <Compile Include="Infrastructure\Configuration\ConfigurationSettingsProviderTest.cs" />
     <Compile Include="Infrastructure\DataAccess\DbAccessorTest.cs" />

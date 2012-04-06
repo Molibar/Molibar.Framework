@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Reflection;
 using Molibar.Infrastructure.Configuration;
 using Molibar.Infrastructure.Configuration.Model;
 using Molibar.Infrastructure.Logging;
@@ -12,10 +11,10 @@ namespace Molibar.Framework.UnitTest.Infrastructure.Configuration
     [TestFixture]
     class ConfigurationSettingsProviderTest
     {
-        private MockRepository _mock;
-        private ConfigurationSettingsProvider _configurationSettingsProvider;
-        private IConfigurationSettingsRepository _configurationSettingsRepository;
-        private ILogger _logger;
+        protected MockRepository _mock;
+        protected ConfigurationSettingsProvider _configurationSettingsProvider;
+        protected IConfigurationSettingsRepository _configurationSettingsRepository;
+        protected ILogger _logger;
 
         [SetUp]
         public void SetUp()
@@ -64,26 +63,6 @@ namespace Molibar.Framework.UnitTest.Infrastructure.Configuration
 
             // Assert
             _configurationSettingsRepository.VerifyAllExpectations();
-        }
-
-        [Test]
-        public void ShouldLog_Error_ToConvertToPropertyType()
-        {
-            // Arrange
-            const string value = "StrangeUnknownValue";
-            const string message = "Can't convert StrangeUnknownValue to IntPtr for property System.Object.PropertyName";
-            var obj = new object();
-            var propertyInfo = _mock.Stub<PropertyInfo>();
-            propertyInfo.Stub(x => x.Name).Return("PropertyName");
-            propertyInfo.Stub(x => x.PropertyType).Return(typeof(IntPtr));
-            _logger.Expect(
-                x => x.LogErrorMessage(typeof(ConfigurationSettingsProvider), message)).Repeat.Once();
-            _mock.ReplayAll();
-            // Act
-            _configurationSettingsProvider.SetProperty(propertyInfo, obj, value);
-
-            // Assert
-            _logger.VerifyAllExpectations();
         }
 
 
