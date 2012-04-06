@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Molibar.Caching.PostSharp", "Molibar.Framework.Caching.PostSharp\Molibar.Caching.PostSharp.csproj", "{2BB17958-DAB6-4B21-8D9D-40CBB8554224}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BB17958-DAB6-4B21-8D9D-40CBB8554224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BB17958-DAB6-4B21-8D9D-40CBB8554224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BB17958-DAB6-4B21-8D9D-40CBB8554224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BB17958-DAB6-4B21-8D9D-40CBB8554224}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35;packages\Unity.Interception.2.1.505.0\lib\NET35;packages\EnterpriseLibrary.Common.5.0.505.0\lib\NET35;packages\EnterpriseLibrary.Caching.5.0.505.0\lib\NET35
+	EndGlobalSection
+EndGlobal

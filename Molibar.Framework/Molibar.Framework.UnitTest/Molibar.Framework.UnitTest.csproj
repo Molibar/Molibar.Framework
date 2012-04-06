@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BD722DBB-01B2-44C3-A8B9-A34BCD5E676B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Molibar.Framework.UnitTest</RootNamespace>
+    <AssemblyName>Molibar.Framework.UnitTest</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.0.12054\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Rhino.Mocks">
+      <HintPath>..\packages\RhinoMocks.3.6.1\lib\net\Rhino.Mocks.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\FilenameIteratorTest.cs" />
+    <Compile Include="Common\ConverterTest.cs" />
+    <Compile Include="Common\StringToolsTest.cs" />
+    <Compile Include="Common\StringTools_Left_Test.cs" />
+    <Compile Include="Common\StringTools_PadValue_Test.cs" />
+    <Compile Include="Configuration\ConfigurationSettingsTest.cs" />
+    <Compile Include="Configuration\ConfigurationSettingsProviderTest.cs" />
+    <Compile Include="DataAccess\DbAccessorTest.cs" />
+    <Compile Include="Extensions\NumberFormatting\NumberFormatExtensionsTests.cs" />
+    <Compile Include="Extensions\NumberFormatting\PriceFormatExtensions.cs" />
+    <Compile Include="Common\StringTools_StripNonNumeric_Test.cs" />
+    <Compile Include="Helpers\UriHelperTest.cs" />
+    <Compile Include="Logging\ForTesting\MemoryLoggerForTestTest.cs" />
+    <Compile Include="Logging\LogTest.cs" />
+    <Compile Include="PerformanceCounters\TimeMeasurerTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Molibar.Common\Molibar.Common.csproj">
+      <Project>{3C735636-B2DA-4C52-811C-D0D9CED49A8C}</Project>
+      <Name>Molibar.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Molibar.Infrastructure\Molibar.Infrastructure.csproj">
+      <Project>{23A08259-C947-439B-B820-F16CED98A257}</Project>
+      <Name>Molibar.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
